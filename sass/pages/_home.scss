@@ -1,0 +1,64 @@
+.body {
+  background-color: #f9f0ff;
+  background-image: url(../assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  // border: 1px solid white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-faq {
+  max-width: 420px;
+  min-height: 25vh;
+  border-radius: 1rem;
+  background-color: $color-faq-bg;
+  padding: 2rem 2rem;
+
+  // border: 2px solid yellow;
+
+  &__head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      width: 7%;
+      height: 7%;
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__details {
+    &--head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.faq-accord {
+  border-bottom: 2px solid $color-bg;
+  padding: 1rem 0rem;
+}
+
+.details-news {
+  cursor: pointer;
+}
+.icon-minus {
+  display: none;
+}
+.icon-minus-open {
+  display: block;
+}
+.answer-faq {
+  display: none;
+}
+.answer-faq-open {
+  display: block;
+}

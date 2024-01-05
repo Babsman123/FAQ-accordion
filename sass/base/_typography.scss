@@ -1,0 +1,13 @@
+.section-faq {
+  &__head {
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+  &__details {
+    &--head {
+      font-size: 1.1rem;
+      font-weight: bolder;
+    }
+  }
+}
