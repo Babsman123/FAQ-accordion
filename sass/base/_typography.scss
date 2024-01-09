@@ -9,5 +9,24 @@
       font-size: 1.1rem;
       font-weight: bolder;
     }
+
+    &--info {
+      font-size: 1.4rem;
+      color: $color-text;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .section-faq {
+    &__details {
+      &--head {
+        font-size: 1rem;
+      }
+
+      &--info {
+        font-size: 1.25rem;
+      }
+    }
   }
 }

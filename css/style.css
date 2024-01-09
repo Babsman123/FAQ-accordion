@@ -9,7 +9,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Red Hat Display"; }
 
 .section-faq__head h1 {
   font-size: 4.5rem; }
@@ -17,6 +18,16 @@ body {
 .section-faq__details--head {
   font-size: 1.1rem;
   font-weight: bolder; }
+
+.section-faq__details--info {
+  font-size: 1.4rem;
+  color: #8c6991; }
+
+@media (max-width: 425px) {
+  .section-faq__details--head {
+    font-size: 1rem; }
+  .section-faq__details--info {
+    font-size: 1.25rem; } }
 
 .u-margin-bottom {
   margin-bottom: 2rem; }
@@ -40,7 +51,9 @@ body {
   min-height: 25vh;
   border-radius: 1rem;
   background-color: white;
-  padding: 2rem 2rem; }
+  padding: 2rem 2rem;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden; }
   .section-faq__head {
     display: flex;
     flex-direction: row;
@@ -61,6 +74,12 @@ body {
 .details-news {
   cursor: pointer; }
 
+.icon-plus {
+  display: block; }
+
+.icon-plus-open {
+  display: none; }
+
 .icon-minus {
   display: none; }
 
@@ -68,7 +87,27 @@ body {
   display: block; }
 
 .answer-faq {
-  display: none; }
+  height: 0vh;
+  transform: translateX(-1100%);
+  transition: all 0.9s ease-in; }
 
 .answer-faq-open {
-  display: block; }
+  height: 11vh;
+  transform: translateX(0%);
+  transition: all 0.9s ease-out; }
+
+@media (max-width: 425px) {
+  .body {
+    background-image: url(../assets/images/background-pattern-mobile.svg);
+    background-size: 100% 50%;
+    margin-top: -10rem; }
+  .section-faq {
+    max-width: 310px; }
+  .answer-faq {
+    height: 0vh;
+    transform: translateX(-1100%);
+    transition: all 0.9s ease-in; }
+  .answer-faq-open {
+    height: 8vh;
+    transform: translateX(0%);
+    transition: all 0.9s ease-out; } }
