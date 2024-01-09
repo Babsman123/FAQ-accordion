@@ -108,6 +108,6 @@ body {
     transform: translateX(-1100%);
     transition: all 0.9s ease-in; }
   .answer-faq-open {
-    height: 8vh;
+    height: 9.5vh;
     transform: translateX(0%);
     transition: all 0.9s ease-out; } }
